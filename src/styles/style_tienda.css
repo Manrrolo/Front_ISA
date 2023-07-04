@@ -1,0 +1,189 @@
+.Material {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  align-items: center;
+  gap: 10px;
+}
+
+.menu_icon {
+  height: 40px;
+  width: 40px;
+  position:relative; /*agregado*/
+}
+
+#contMateriales {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+}
+
+#MenuItems {
+  align-items: center;
+}
+
+#contItems {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+  background-color: #fcbf49ff;
+  border-radius: 10px;
+  gap: 5px;
+  justify-content: space-evenly;
+}
+
+/* ======== Tienda ======== */
+#Tienda {
+  position: fixed;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  overflow: scroll;
+}
+
+#Tienda .modal-content {
+  margin: 0 auto;
+  border-radius: 10px;
+  padding: 35px 25px;
+  background-color: #fcbf49;
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: auto;
+  top: 50%;
+  left: 50%;
+}
+
+.display-block {
+  display: block;
+}
+
+.display-none {
+  display: none;
+}
+
+#Tienda header {
+  display: flex;
+  flex-direction: row;
+  height: 5%;
+  flex-wrap: nowrap;
+  justify-content: center;
+  gap: 80px;
+
+}
+
+.ItemTienda {
+  display: flex;
+  flex-direction: row;
+  border-radius: 10px;
+  background-color: rgb(249, 245, 222);
+  padding: 20px;
+  text-align: center;
+  align-items: center;
+  gap: 0 20px;
+  width: 100%; /*agregado*/
+  justify-content:center; /*agregado*/
+}
+
+.ItemTienda h2 {
+  font-size: xx-large;
+  grid-row-start: 1;
+  align-self: center;
+  color:black;
+}
+
+.ItemTienda .Item {
+
+  align-self: center;
+  justify-self: auto;
+  margin-left: 0%;
+  height: 200px;
+  width: 200px;
+}
+
+.ItemTienda p {
+  grid-column-start: 2;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  align-self: center;
+  font-size: x-large;
+  color:black
+}
+
+.ItemTienda button {
+  margin: 0 100px;
+  grid-row-start: 3;
+  grid-column-start: 3;
+  align-self: center;
+}
+
+.ItemTienda .column {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.Costos {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 25px;
+  grid-row-start: 1;
+  grid-row-end: 3;
+  grid-column-start: 3;
+  align-self: center;
+
+}
+
+#ItemsTienda {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+h1{
+  color:black; /*agregado*/
+}
+
+.costo{
+  display:flex; /*agregado*/
+}
+
+.pretty-button {
+  background-color: #fcbf49;  /*modificado*/
+  border: 2px solid #fcbf49; /*modificado*/
+  border-radius: 30px;
+  box-shadow: var(--maximum-red) 4px 4px 0 0;
+  color: white; /*modificado*/
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 30px;
+  font-family: 'Nunito Sans';
+  margin: 20px;
+  padding: 0 18px;
+  line-height: 50px;
+  text-align: center;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+.pretty-button:hover {
+  background-color: var(--maximum-yellow-red);
+}
+
+.pretty-button:active {
+  box-shadow: var(--maximum-red) 2px 2px 0 0;
+  transform: translate(2px, 2px);
+}
+

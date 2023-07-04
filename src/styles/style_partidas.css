@@ -1,0 +1,244 @@
+.text {
+  border-radius: 10px;
+  border: #e9ca70 5px solid;
+  background-color: #444;
+}
+.text p {
+  margin-left: 15px;
+}
+#text-img {
+  display: inline-flex;
+}
+.contenedor-match {
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  width: 200px;
+}
+.h2_partida {
+  font-size: 25px;
+}
+
+.partidas-container {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.partidas-container-1 {
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  align-content: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 10%;
+}
+select {
+  /* Reset Select */
+  appearance: none;
+  outline: 0;
+  border: 0;
+  box-shadow: none;
+  /* Personalize */
+  flex: 1;
+  padding: 0 1em;
+  height: 100%;
+  color: #e9ca70;
+  background-color: #52361e;
+  background-image: url('../imgs/navbar.png');
+  cursor: pointer;
+}
+/* Remove IE arrow */
+select::-ms-expand {
+  display: none;
+  background-image: url('../imgs/navbar.png');
+}
+/* Custom Select wrapper */
+.select {
+  position: relative;
+  display: flex;
+  width: 20em;
+  height: 3em;
+  align-items: center;
+  margin: 0 auto;
+  border-radius: .25em;
+  overflow: hidden;
+}
+/* Arrow */
+.select::after {
+  content: '\25BC';
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1em;
+  background-color: #34495e;
+  transition: .25s all ease;
+  pointer-events: none;
+}
+/* Transition */
+.select:hover::after {
+  color: #f39c12;
+}
+select::after {
+  background-image: url('../imgs/navbar.png');
+}
+.boton-partida {
+  display: flex;
+}
+.border-partida {
+  margin: 50px auto;
+  border-radius: 10px;
+  border: #e9ca70 3px solid;
+  padding: 10px;
+  width: 430px;
+}
+.partida {
+  background-color: #444;
+  border-radius: 10px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  max-width: 100%;
+  margin: 20px;
+  overflow: hidden;
+  width: 55%;
+}
+
+.partida h6 {
+  opacity: 0.6;
+  margin: 0;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.partida-preview {
+  background-color: #e9ca70;
+  color: #fff;
+  padding: 30px;
+  max-width: 250px;
+}
+
+.partida-preview a {
+  color: #fff;
+  display: inline-block;
+  font-size: 12px;
+  opacity: 0.6;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+.partida-info {
+  padding: 50px;
+  position: relative;
+  width: 100%;
+}
+
+.progress-container {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  text-align: right;
+  width: 150px;
+}
+
+
+.progress {
+  background-color: #ddd;
+  border-radius: 3px;
+  height: 5px;
+  width: 100%;
+}
+
+.progress::after {
+  border-radius: 3px;
+  background-color: #e9ca70;
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 5px;
+  width: 50%;
+}
+
+.progress-text {
+  font-size: 10px;
+  opacity: 0.6;
+  letter-spacing: 1px;
+}
+
+.btn {
+  background-color: #e9ca70;
+  border: 0;
+  border-radius: 50px;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+  color: #fff;
+  font-size: 16px;
+  font-weight: 700;
+  padding: 12px 25px;
+  position: absolute;
+  right: 5%;
+  top: 50%;
+  letter-spacing: 1px;
+}
+.titulo_partida {
+    font-size: 30px;
+    font-weight: bold;
+    
+  }
+
+.btn:hover {
+  color: #000000;
+  background-color: #ffffff;
+}
+
+.btn:active {
+  transform: scale(0.9);
+  box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+}
+@media (max-width: 1100px) {
+  .partida {
+    width: 80%;
+  }
+}
+@media (max-width: 700px) {
+  .partida h6 {
+    opacity: 0.6;
+    margin: 0;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+  }
+  h2 {
+    width: 100%;
+    text-align: left;
+  }
+  .partida {
+    width: 90%;
+  }
+  .h2_partida {
+    font-size: 20px;
+  }
+  .progress-container {
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    text-align: center;
+    width: 100px;
+  }
+}
+@media (max-width: 500px) {
+  .titulo_partida {
+    font-size: 18px;
+  }
+}
+.swal2-popup {
+  border: #e9ca70 5px solid !important;
+  color: whitesmoke !important;
+  border-radius: 10px !important;
+  background: url("../imgs/background.jpg") !important;
+}
+.p-alert {
+  text-align: center;
+}

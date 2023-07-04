@@ -1,0 +1,57 @@
+.cuerpo-registro {
+  width: 100%;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+}
+.img_logo {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90px;
+  height: 90px;
+  margin-bottom: 9px;
+  position: static;
+}
+
+.sign_up {
+  display: grid;
+}
+
+.sign_up p {
+  margin: 0 auto;
+}
+
+.border-registro {
+  margin: 100px auto;
+  border-radius: 10px;
+  border: #e9ca70 3px solid;
+  padding: 15px;
+  width: 400px;
+  box-shadow: 25px 40px 28px 0px rgba(0, 0, 0, 0.38);
+}
+
+label {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+input {
+  margin-bottom: 7px;
+  height: 35px;
+}
+
+#btn-cuenta {
+  height: 50px;
+  width: 150px;
+  margin: auto;
+  display: block;
+  background-color: #006d6d;
+  border-color: #005959;
+  color: #e9ca70;
+  text-shadow: #261104 0 2px;
+  font-weight: lighter;
+  font-size: 14px;
+  font-family: 'Spectral SC', serif;
+  margin-top: 10px;
+}
