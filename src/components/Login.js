@@ -4,9 +4,9 @@ import axios from 'axios';
 import useAuth from '../hooks/useAuth';
 import swal from 'sweetalert2';
 import Navbar from './Nabvar';
+import logo from '../imgs/logo_2.png';
 import '../styles/style_iniciosesion.css';
-import '../styles/style_preloader.css'
-import logo_sin_letras from '../imgs/logo_sin_letras.png';
+import '../styles/style_preloader.css';
 function Login() {
   const [email, setEmail] = useState('');
   const [hash_contrasena, setPassword] = useState('');
@@ -54,13 +54,13 @@ function Login() {
     return <div className="loading">Loading...</div>;
   }
 
-  if (currentUser) return <Navigate to="/partidas" />;
+  if (currentUser) return <Navigate to="/chatbot" />;
   return (
     <>
       <Navbar />
       <div className="cuerpo-inicio-sesion">
         <div className="border-inicio-sesion">
-          <img className="img_logo" src={logo_sin_letras} alt="" />
+          <img className="img_logo" src={logo} alt="" />
           <form className="login">
             <p>Iniciar sesión</p>
             <label> Email</label>

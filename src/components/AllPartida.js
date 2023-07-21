@@ -41,14 +41,14 @@ const Partidas = () => {
         title: 'Error al pedir las partidas',
         text: error.response.data,
         icon: 'error',
-      })
+      });
     }
   }, [currentUser]);
 
   if (currentUser == null) {
     swal.fire({
       title: 'Debes iniciar sesión',
-      text: 'Debes primero de iniciar sesión para poder jugar',
+      text: 'Debes primero de iniciar sesión para poder acceder al chatbot',
       icon: 'warning',
     });
     return <Navigate to="/" />;

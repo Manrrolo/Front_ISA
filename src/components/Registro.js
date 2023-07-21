@@ -2,8 +2,8 @@ import axios from 'axios';
 import { Formik } from 'formik';
 import Navbar from './Nabvar';
 import '../styles/style_registro.css';
-import logo_sin_letras from '../imgs/logo_sin_letras.png';
-import swal from 'sweetalert2'
+import logo from '../imgs/logo_2.png';
+import swal from 'sweetalert2';
 import { useState } from 'react';
 import '../styles/style_preloader.css';
 
@@ -64,7 +64,6 @@ function validarForm(valores) {
   return errores;
 }
 
-
 function Registro() {
   const [loading, setLoading] = useState(false);
   function crearUsuario(valores, resetForm) {
@@ -90,7 +89,6 @@ function Registro() {
       .catch((error) => {
         swal.fire('Registro fallido!', error.response.data, 'error');
       });
-
   }
   if (loading) {
     return <div className="loading">Loading...</div>;
@@ -100,7 +98,7 @@ function Registro() {
       <Navbar />
       <div className="cuerpo-registro">
         <div className="border-registro">
-          <img className="img_logo" src={logo_sin_letras} alt="" />
+          <img className="img_logo" src={logo} alt="" />
           <Formik
             initialValues={{
               username: '',

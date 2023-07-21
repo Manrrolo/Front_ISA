@@ -5,6 +5,7 @@ import Login from './components/Login';
 import Registro from './components/Registro';
 import Nosotros from './components/Nosotros';
 import Partidas from './components/AllPartida';
+import Chatbot from './components/Chatbot';
 import About from './components/About';
 import Game from './components/Game';
 import Error404 from './components/Error404';
@@ -24,6 +25,7 @@ function Routing() {
           <Route path={'/registro'} element={<Registro />} />
           <Route path={'/nosotros'} element={<Nosotros />} />
           <Route path={'/partidas'} element={<Partidas />} />
+          <Route path={'/chatbot'} element={<Chatbot />} />
           <Route path={'/newpartida'} element={<NewPartida />} />
           <Route path={'/about'} element={<About />} />
           <Route path={'/admin'} element={<Admin />} />

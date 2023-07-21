@@ -2,18 +2,22 @@ import '../styles/style_navbar.css';
 import Anchor from './Anchor';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
-import '../JQuery/navbar'
+import '../JQuery/navbar';
 import Music from './Music';
 import useAuth from '../hooks/useAuth';
 function Navbar() {
-  const { currentUser, nickName, isAdmin , handleUserLogout } = useAuth();
+  const { currentUser, nickName, isAdmin, handleUserLogout } = useAuth();
   return (
     <>
       <Music />
       <nav className="nav">
         <ul className="menu">
           <li id="li" className="logo">
-            <Anchor title={'Werlin'} link={'/'} class={'anchor'}></Anchor>
+            <Anchor
+              title={'Isa Intervial'}
+              link={'/'}
+              class={'anchor'}
+            ></Anchor>
           </li>
           <li id="li" className="item">
             <Anchor title={'Home'} link={'/'} class={'anchor'}></Anchor>
@@ -27,7 +31,7 @@ function Navbar() {
           </li>
           <li id="li" className="item">
             <Anchor
-              title={'Como Jugar'}
+              title={'Nuestras rutas'}
               link={'/reglas'}
               class={'anchor'}
             ></Anchor>
@@ -38,8 +42,8 @@ function Navbar() {
           <li id="li" className="item button">
             {currentUser ? (
               <Anchor
-                title={'Jugar'}
-                link={'/partidas'}
+                title={'Chatbot'}
+                link={'/chatbot'}
                 class={'anchor'}
               ></Anchor>
             ) : (

@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Spectral+SC:100,200,300,400,500,600,700,800,900');
 /* Basic styling */
 .nav {
-  background: url('../imgs/navbar.png');
   padding: 5px 20px;
   position: fixed;
   z-index: 2000;
@@ -32,7 +31,7 @@
   display: none;
   position: absolute;
   left: -6px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -307,12 +306,13 @@ button:focus {
   padding: 10px 23px;
   border-radius: 5px;
   border: 2px solid rgb(209, 159, 32);
-  background-color: rgb(209, 159, 32);;
+  background-color: rgb(209, 159, 32);
   font-size: 1.375em;
   text-decoration: none;
   text-align: center;
   display: inline-block;
-  transition: background-color .15s ease-in-out, border .15s ease-in-out, color .15s ease-in-out;
+  transition: background-color 0.15s ease-in-out, border 0.15s ease-in-out,
+    color 0.15s ease-in-out;
 }
 .button1:hover {
   color: #fff;

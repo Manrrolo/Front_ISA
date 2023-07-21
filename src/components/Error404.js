@@ -1,8 +1,10 @@
 import '../styles/style_error404.css';
+import Navbar from './Nabvar';
 import Anchor from './Anchor';
 function Error404() {
   return (
     <>
+      <Navbar />
       <header className="top-header"></header>
       <div className="body_error">
         <div>

@@ -1,8 +1,8 @@
 import Navbar from './Nabvar';
 import '../styles/style_index.css';
 import '../styles/style_preloader.css';
-import logo from '../imgs/logo 2.png';
-import castillo from '../imgs/castillo.jpg';
+import logo from '../imgs/logo.png';
+import castillo from '../imgs/background.jpeg';
 import Button from './Button';
 import { useState, useEffect } from 'react';
 function Landing() {
@@ -21,7 +21,12 @@ function Landing() {
       <section>
         <img src={logo} id="moon" alt="" />
         <img src={castillo} id="mountains_behind" alt="" />
-        <Button id={'btn'} id_2={'btn-btn'} title={'¡Juega ya!'} link={'/partidas'}></Button>
+        <Button
+          id={'btn'}
+          id_2={'btn-btn'}
+          title={'¡ChatBot!'}
+          link={'/chatbot'}
+        ></Button>
       </section>
     </>
   );

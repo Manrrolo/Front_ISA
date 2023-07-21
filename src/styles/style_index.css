@@ -73,7 +73,7 @@ section img#moon {
   z-index: 1000;
   width: 400px;
   height: 400px;
-  object-fit: cover;
+  object-fit: contain;
   position: absolute;
   top: 80px;
 }
@@ -145,16 +145,16 @@ section img#mountains_front {
   z-index: 1000;
 }
 input {
-    width: 80%;
-    line-height: 40px;
-    padding: 0 15px;
-    box-sizing: border-box;
-    font-size: 14px;
-    color: #222;
-    border: 3px solid #52361e;
-    border-radius: 7px;
+  width: 80%;
+  line-height: 40px;
+  padding: 0 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+  color: #222;
+  border: 3px solid #52361e;
+  border-radius: 7px;
 }
 input:focus {
   outline: 0;
-	border-color: #e9ca70;
+  border-color: #e9ca70;
 }
