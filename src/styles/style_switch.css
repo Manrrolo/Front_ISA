@@ -2,10 +2,10 @@
   box-sizing: border-box;
 }
 :root {
-  --switches-bg-color: goldenrod;
+  --switches-bg-color: #FC5404;
   --switches-label-color: white;
   --switch-bg-color: white;
-  --switch-text-color: goldenrod;
+  --switch-text-color: #FC5404;
 }
 
 body {
