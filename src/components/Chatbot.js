@@ -19,7 +19,7 @@ const Chatbot = () => {
   const [loading, setLoading] = useState(false);
   const [isChecked, setIsChecked] = useState(false);
   const [selectedFile, setSelectedFile] = useState(null);
-
+/*
   useEffect(() => {
     setLoading(true);
     const fetchData = async () => {
@@ -48,7 +48,7 @@ const Chatbot = () => {
     });
     return <Navigate to="/login" />;
   }
-
+*/
   const onSubmitText = async (event) => {
     event.preventDefault();
     try {
