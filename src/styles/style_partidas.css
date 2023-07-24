@@ -47,9 +47,9 @@ select {
   flex: 1;
   padding: 0 1em;
   height: 100%;
-  color: #e9ca70;
-  background-color: #52361e;
-  background-image: url('../imgs/navbar.png');
+  color: #FC5404;
+  background-color: #fff;
+  border-radius: 8px;
   cursor: pointer;
 }
 /* Remove IE arrow */
@@ -237,7 +237,7 @@ select::after {
   border: #e9ca70 5px solid !important;
   color: whitesmoke !important;
   border-radius: 10px !important;
-  background: url("../imgs/background.jpg") !important;
+  background: url("../imgs/chatbot_bg.jpeg") !important;
 }
 .p-alert {
   text-align: center;
