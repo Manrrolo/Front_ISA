@@ -24,7 +24,7 @@ function Landing() {
         <Button
           id={'btn'}
           id_2={'btn-btn'}
-          title={'¡ChatBot!'}
+          title={'Chatea con Isa-bot 🤖'}
           link={'/chatbot'}
         ></Button>
       </section>
