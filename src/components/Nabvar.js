@@ -1,5 +1,6 @@
 import '../styles/style_navbar.css';
 import Anchor from './Anchor';
+import logoIsa from '../imgs/navbar-isa.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBars } from '@fortawesome/free-solid-svg-icons';
 import '../JQuery/navbar';
@@ -13,11 +14,7 @@ function Navbar() {
       <nav className="nav">
         <ul className="menu">
           <li id="li" className="logo">
-            <Anchor
-              title={'Isa Intervial'}
-              link={'/'}
-              class={'anchor'}
-            ></Anchor>
+            <img src={logoIsa} alt="Logo" />
           </li>
           <li id="li" className="item">
             <Anchor title={'Home'} link={'/'} class={'anchor'}></Anchor>
