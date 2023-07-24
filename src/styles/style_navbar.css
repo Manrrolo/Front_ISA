@@ -1,27 +1,26 @@
 @import url('https://fonts.googleapis.com/css?family=Spectral+SC:100,200,300,400,500,600,700,800,900');
 /* Basic styling */
 .nav {
-  padding: 5px 20px;
+  /* padding: 5px 20px; */
   position: fixed;
   z-index: 2000;
   top: 0;
   width: 100%;
-  box-shadow: 0px 4px 3px rgba(0, 0, 0, 0.5);
 }
 .dropdown {
   float: left;
   overflow: hidden;
 }
 .drop {
-  background: teal;
-  border: 1px #006d6d solid;
+  border: 1px white solid;
+  border-radius: 15px;
 }
 
 /* Dropdown button */
 .dropdown .dropbtn {
   font-size: 16px;
   padding: 7.5px 15px;
-  color: #e9ca70;
+  color: #fff;
   border: none;
   outline: none;
   font-family: inherit; /* Important for vertical align on mobile phones */
@@ -47,7 +46,7 @@
 
 /* Add a grey background color to dropdown links on hover */
 .dropdown-content a:hover {
-  background-color: #e9ca70;
+  background-color: #fff;
 }
 
 /* Show the dropdown menu on hover */
@@ -58,32 +57,48 @@
   list-style-type: none;
 }
 .anchor {
-  color: #e9ca70;
+  display: inline-block;
+  position: relative;
+  color: #fff;
   text-decoration: none;
 }
-.anchor:hover {
-  text-decoration: underline;
+.anchor::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FC5404;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
 }
-.logo .anchor:hover {
-  text-decoration: none;
+
+.anchor:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
+
 .menu #li {
   font-size: 16px;
   padding: 10px 10px;
   white-space: nowrap;
-  font-family: 'Spectral SC', serif;
+  font-family: 'Roboto', sans-serif;
   text-transform: uppercase !important;
   font-weight: lighter;
-  color: #e9ca70;
+  color: #fff;
+}
+.logo {
+  padding: 0px !important;
+}
+.logo img {
+  width: 70%;
+  height: auto;
 }
 .menu #li:active {
-  color: #e9ca70;
+  color: #fff;
   font-weight: 700;
-}
-.menu #li:hover,
-.menu #li:focus {
-  box-shadow: 0 0.5em 0.5em -0.4em var(#e9ca70);
-  transform: translateY(-0.25em);
 }
 button {
   color: var(#ffa260);
@@ -148,19 +163,14 @@ button:focus {
   }
   .button a {
     padding: 7.5px 15px;
-    background: teal;
+    background: #FC5404;
+    border-radius: 15px;
   }
   .button.secondary a {
+    background: #FC5404;
+  }
+  .button:not(.secondary) a:hover, .button a:hover {
     background: transparent;
-  }
-  .button a:hover {
-    text-decoration: none;
-    background-color: rgba(233, 202, 112, 0.2);
-    z-index: 100;
-  }
-  .button:not(.secondary) a:hover {
-    background: #006d6d;
-    border-color: #005959;
   }
 }
 /* Desktop menu */
