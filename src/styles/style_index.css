@@ -19,7 +19,6 @@ body {
   padding: 0;
   position: relative;
   box-sizing: border-box;
-  cursor: url(../imgs/cursor-3.png), auto;
 }
 body::-webkit-scrollbar {
   width: 15px;
@@ -34,12 +33,6 @@ body::-webkit-scrollbar-thumb:hover {
 }
 p {
   text-align: justify;
-}
-a {
-  cursor: url(../imgs/cursor-4.png), auto;
-}
-button {
-  cursor: url(../imgs/cursor-4.png), auto;
 }
 
 section {
@@ -82,54 +75,40 @@ section img#moon {
   text-decoration: none;
   padding: 9px;
   display: inline-block;
-  border: 1px solid #655339;
-  background: #412e1f;
+  background: #FC5404;
   font-size: 1.5em;
   z-index: 9;
   transform: translateY(100px);
+  border-radius: 25px;
+  transition: background 0.3s ease-in-out;
 }
+#btn:hover {
+  background: white;
+}
+
 #btn-btn {
   border: 0;
   border-radius: 0;
-  font-family: 'Spectral SC', serif;
+  font-family: 'Roboto', sans-serif;
   font-weight: 400;
   font-size: 1.6em;
   line-height: 30px;
   position: relative;
   display: inline-block;
   padding: 0;
-  color: #362009;
-  text-shadow: #ffe989 0 1px;
+  color: #fff;
   text-align: center;
-  background: url('../imgs/btn-1.png') top left repeat-x #ff942b;
+  transition: color 0.3s ease-in-out;
+}
+#btn-btn:hover {
+color: #FC5404;
 }
 #btn-btn span {
   position: relative;
   display: inline-block;
   z-index: 2;
-  padding: 14px 3rem;
-  text-transform: uppercase;
+  padding: 14px 2rem;
   top: 1px;
-}
-#btn-btn span::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 0;
-  height: 40px;
-  width: 16px;
-  z-index: 2;
-  background: url('../imgs/btn-3.png') left top no-repeat;
-}
-#btn-btn span::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  height: 40px;
-  width: 16px;
-  z-index: 2;
-  background: url('../imgs/btn-2.png') left top no-repeat;
 }
 
 #text {
@@ -143,6 +122,10 @@ section img#moon {
 
 section img#mountains_front {
   z-index: 1000;
+}
+
+#mountains_behind{
+  filter: brightness(70%);
 }
 input {
   width: 80%;
