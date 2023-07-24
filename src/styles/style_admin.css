@@ -1,10 +1,9 @@
 .text_admin {
   border-radius: 10px;
-  border: #e9ca70 5px solid;
+  border: #FC5404 5px solid;
   background-color: rgb(0,0, 0, 0.2);
   padding: 15px;
   width: 100%;
-  box-shadow: 25px 40px 28px 0px rgba(0, 0, 0, 0.38);
 }
 .titulo_admin {
   font-size: 30px;
